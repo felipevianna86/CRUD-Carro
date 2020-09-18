@@ -17,7 +17,7 @@ import javax.validation.constraints.NotNull;
 import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.format.annotation.DateTimeFormat;
 
-@Entity(name = "tbl_post") //Define o nome da tabela que será criada no banco de dados
+@Entity(name = "tbl_post") 
 public class Carro implements Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -27,8 +27,8 @@ public class Carro implements Serializable {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "post_seq") //Define que a tabela fará uso da sequence criada antes
 	private Long id;
 	
-	@Column(nullable = false, length = 50) //Define propriedades da coluna
-	@NotBlank(message = "Fabricante do veículo") //Define qual mensagem será exibida caso a validação da coluna falhar
+	@Column(nullable = false, length = 50) 
+	@NotBlank(message = "Fabricante do veículo") 
 	private String fabricante;
 	
 	@Column(nullable = false, length = 50)

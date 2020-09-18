@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import com.exemplo.carro.model.Carro;
 
-@Repository //Define a classe como um bean do Spring
+@Repository 
 public interface CarroRepository extends JpaRepository<Carro, Long> { 
 
 } 

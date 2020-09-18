@@ -9,11 +9,11 @@ import com.exemplo.carro.model.Carro;
 import com.exemplo.carro.repository.CarroRepository;
 import java.util.Optional;
 
-@Service //Define a classe como um bean do Spring
+@Service 
 public class CarroService {
 	
 	@Autowired
-	private CarroRepository repository; //Injeta o repositório
+	private CarroRepository repository; 
 	
 	public List<Carro> findAll() {
 		return repository.findAll(); 

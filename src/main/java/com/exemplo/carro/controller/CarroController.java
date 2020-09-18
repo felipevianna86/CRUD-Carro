@@ -13,7 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.exemplo.carro.model.Carro;
 import com.exemplo.carro.service.CarroService;
 
-@Controller //Define a classe como um bean do Spring
+@Controller 
 public class CarroController {
 	
 	@Autowired

@@ -5,11 +5,13 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width" />
 	<title>Cadastro de Veículos</title>
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"></link>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
+     
 </head>
 <body>
-	<div class="panel panel-default">
+	<div class="panel panel-default" >
 		<div class="panel-heading">
 			<strong>Cadastro de Veículos</strong>
 		</div>
@@ -56,8 +58,8 @@
 					</fieldset>
 				</div>
 				<div class="form-group row">
-					<button type="submit" class="btn btn-sm btn-primary">Salvar</button>
-					<a th:href="@{/}" class="btn btn-sm btn-default">Cancelar</a>
+					<button type="submit" class="btn btn-sm btn-primary">Cadastrar <i class="fa fa-check" aria-hidden="true"></i></button>
+					<a th:href="@{/}" class="btn btn-sm btn-danger">Cancelar</a>
 				</div>
 			</form>
 		</div>
