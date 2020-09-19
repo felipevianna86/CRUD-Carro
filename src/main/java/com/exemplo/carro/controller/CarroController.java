@@ -8,18 +8,20 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.exemplo.carro.model.Carro;
 import com.exemplo.carro.service.CarroService;
 
-@Controller 
+@Controller
+@RequestMapping("/carros")
 public class CarroController {
 	
 	@Autowired
 	private CarroService service; 
 	
-	@GetMapping("/")
+	@GetMapping
 	public ModelAndView findAll() {
 		
 		ModelAndView mv = new ModelAndView("lista_carros");

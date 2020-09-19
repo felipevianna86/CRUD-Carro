@@ -16,7 +16,7 @@
 			<strong>Cadastro de Veículos</strong>
 		</div>
 		<div class="panel-body">
-			<form class="form-horizontal" th:object="${carro}" th:action="@{/save}" method="POST" style="margin: 10px">
+			<form class="form-horizontal" th:object="${carro}" th:action="@{/carros/save}" method="POST" style="margin: 10px">
 				<div class="form-group">
  					<fieldset>
 						<div class="form-group row">
@@ -59,7 +59,7 @@
 				</div>
 				<div class="form-group row">
 					<button type="submit" class="btn btn-sm btn-primary">Cadastrar <i class="fa fa-check" aria-hidden="true"></i></button>
-					<a th:href="@{/}" class="btn btn-sm btn-danger">Cancelar <i class="icon-remove"></i> icon-remove</a>
+					<a th:href="@{/carros}" class="btn btn-sm btn-danger">Cancelar <i class="icon-remove"></i></a>
 				</div>
 			</form>
 		</div>
